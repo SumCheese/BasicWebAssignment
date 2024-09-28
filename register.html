@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 조준범/60211700/기초웹 과제 #1 -->
+
+
+    <title>60211700_조준범</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/Assignment/index.html"><img src="/Assignment/img/logo_mj.gif" alt="" width="140"></a>
+            &nbsp;
+            <a href="/Assignment/index.html" style="color:black; font-size:60px;">MJ CINEMA</a>
+        </div>
+        <p>
+            <font style="font-size: 100%;"><strong>명지재단</strong>에서 새로 시작한 영화 사업으로 명지재단산하 교육 기관 학생들과 <br>
+                주변 주민들의 <strong>문화 수준 함양</strong>을 목표로 시작되었다. </font>
+        </p>
+    </header>
+
+    <nav class="navMenu">
+        <ul id="topMenu">
+            <li><a href="/Assignment/index.html#login">로그인</a></li>
+            <li><a href="/Assignment/register.html">회원가입</a></li>
+            <li><a href="/Assignment/index.html#movie">영화 예매</a></li>
+            <li><a href="/Assignment/index.html#food">매점 주문</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="register">
+            <h1>회원 가입</h1>
+            <div id="Agreement">
+                <form action="#">
+                    <fieldset>
+                        <legend>
+                            <h3>약관 동의</h3>
+                        </legend>
+                        <input type="checkbox" id="useAgreement" name="useAgreement" required>
+                        <label for="useAgreement"><strong>[필수]</strong>명지 시네마 이용약관</label>
+                        <br>
+
+                        <fieldset>
+                            <h3>* 여러분을 환영합니다.</h3>
+                            <p>
+                                명지 시네마 서비스 및 제품(이하 '서비스')를 이용해 주셔서 갑사합니다. 본 약관은 다양한
+                                명지 시네마 서비스의 이용과 관련하여 명지 시네마 서비스를 제공하는 명지학원재단(이하'명지')와
+                                이를 이용하는 명지 시네바 서비스 회원(이하'회원') 또는 비회원과의 관계를 설명하며, 아울러 여러분의
+                                명지 시네마 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다. <br>
+                                명지 시네마 서비스를 이용하시거나 명지 시네마 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을
+                                확인하거나 동의하게 되므로, 잠시 시간을 내시어 주의 깊게 살펴봐 주시기 바랍니다.
+                            </p>
+
+                            <h3>* 다양한 서비스를 즐겨보세요.</h3>
+                            <p>
+                                명지 시네마는 도메인의 웹사이트 및 응용프로그램(어플리케이션, 앱)을 통해 정보 검색, 다른 이용자와의
+                                커뮤니케이션, 콘텐츠 제공, 상품 검색 등 여러분의 문화 생활에 편리함을 더할 수 있는 다양한 서비스를 제공하고 있습니다. <br>
+                                명지 시네마는 기본적으로 여러분 모두에게 동일한 내용의 서비스를 제공합니다. 다만, '청소년보호법' 등 관련 법령이
+                                나 기타 개별 서비스 제공에서의 특별한 필요에 의해서 연령 또는 일정한 등급을 기준으로 이용자를 구분하여
+                                제공하는 서비스의 내용, 이용 시간, 이용 횟수 등을 다르게 하는 등 일부 이용을 제한하는 경우가 있습니다"
+                                자세한 내용은 역시 각 서비스 상의 안내, 공지사항, 고객센터 도움말 등에서 확인하실 수 있습니다.
+                            </p>
+
+                            <h3>* 회원으로 가입하시면 명지 시네마 서비스를 보다 편리하게 이용할 수 있습니다.</h3>
+                            <h3>* 여러분이 제공한 컨텐츠를 소중히 다룰 것입니다</h3>
+                            <h3>* 여러분의 개인정보를 소중히 보호합니다.</h3>
+                            <h3>* 타인의 권리를 존중해 주세요.</h3>
+                            <h3>* 명지 시네마에서 제공하는 다양한 포인트를 요긴하게 활용해 보세요.</h3>
+                            <h3>* 명지 시네마 서비스 이용과 관련하여 몇 가지 주의사항이 있습니다.</h3>
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        </fieldset>
+                        <br><br><br>
+
+                        <input type="checkbox" id="personalAgreement" name="personalAgreement" required>
+                        <label for="personalAgreement"><strong>[필수]</strong>개인정보 수집 및 이용</label>
+                        <br>
+
+                        <fieldset>
+                            <h3>1. 수집하는 개인정보</h3>
+                            <h3>2. 수집한 개인정보의 이용</h3>
+                            <h3>3. 개인정보의 보관기간</h3>
+                            <h3>4. 개인정보 수집 및 이용 동의를 거부할 권리</h3>
+                        </fieldset>
+                        <br><br>
+
+                        <input type="checkbox" id="nameAgreement" name="nameAgreement">
+                        <label for="nameAgreement"><strong>[선택]</strong>실명 인증된 아이디로 가입</label>
+                        <br>
+                        <fieldset>
+                            실명 인증된 아이디로 가입하시면 본인인증이 필요한 서비스(웹 내 결제, 멤버십, 리뷰 등)을 가입 후 바로
+                            이용하실 수 있어요.
+                        </fieldset>
+                        <br><br>
+
+                        <input type="checkbox" id="locationAgreement" name="locationAgreement">
+                        <label for="locationAgreement"><strong>[선택]</strong>위치기반서비스 이용약관</label>
+                        <br>
+                        <fieldset>
+                            위치기반서비스 이용약관에 동의하시면, 위치를 활용한 광고 정보 수신 등을 포함하는 명지 시네마 위치기반
+                            서비스를 이용할 수 있습니다.
+                        </fieldset>
+                        <br><br>
+
+                        <input type="checkbox" id="useAgreement2" name="useAgreement2">
+                        <label for="useAgreement2"><strong>[선택]</strong>위치기반서비스 이용약관</label>
+                        <br>
+                        <input type="checkbox" id="message" name="message">
+                        <label for="message">문자 수신</label> &nbsp;
+                        <input type="checkbox" id="mail" name="mail">
+                        <label for="mail">E-메일 수신</label> &nbsp;
+                        <input type="checkbox" id="kakaotalk" name="kakaotalk">
+                        <label for="kakaotalk">카카오톡 수신</label> &nbsp;
+                        <br><br>
+
+
+                    </fieldset>
+            </div>
+
+            <div id="Form">
+
+                <fieldset>
+                    <legend>
+                        <h3>개인정보 입력</h3>
+                    </legend>
+                    <label for="wantID">[필수] 아이디</label><br>
+                    <input type="text" id="wantID" minlength="8" maxlength="16" required size="30"
+                        placeholder="8~16 자리의 아이디를 입력하세요." required> <br><br>
+
+
+                    <label for="wantPW">[필수] 비밀번호</label><br>
+                    <input type="password" id="wantPW" minlength="8" maxlength="16" required size="30"
+                        placeholder="8~16 자리의 비밀번호를 입력하세요." required><br><br>
+
+                    <label for="checkPW">[필수] 비밀번호 확인</label><br>
+                    <input type="password" id="checkPW" minlength="8" maxlength="16" required size="30"
+                        placeholder="8~16자리의 비밀번호를 입력하세요." required><br><br>
+
+                    <label for="wantName">[필수] 이름</label><br>
+                    <input type="text" id="wantName" name="wantName" maxlength="10" minlength="1"
+                        placeholder="이름을 입력하세요." required size="30">
+                    <br><br>
+
+                    <label for="wantNickname">[필수] 닉네임</label><br>
+                    <input type="text" id="wantNickname" name="wantNickname" maxlength="10" minlength="1"
+                        placeholder="닉네임을 입력하세요." required size="30"> <br><br>
+
+                    <label for="wantEmail">[선택] 이메일주소(비밀번호 찾기 등 본인 확인용)</label><br>
+                    <input type="email" id="wantEmail" name="wantEmail" placeholder="이메일을 입력하세요." size="30">
+                    <select name="emailTale" id="emailTail">
+                        <option value="self">직접 입력</option>
+                        <option value="naver">@naver.com</option>
+                        <option value="google">@gmail.com</option>
+                        <option value="daum">@daum.net</option>
+                    </select><br><br>
+
+                    <label for="wantBirth">[필수] 생년월일 8자리</label><br>
+                    <input type="text" id="wantBirth" name="wantBirth" pattern="d{8}" required
+                        placeholder="생년월일 8자리를 입력하세요." size="30" required maxlength="8"><br><br>
+
+                    <label for="wantTel">[필수] 휴대전화번호</label><br>
+                    <input type="tel" id="wantTel" name="wantTel" pattern="010[0-9]{8}" size="30" required
+                        maxlength="11" placeholder="'-' 없이 전화번호를 입력하세요.">
+                    <br><br>
+
+                    <input type="submit" value="가입하기">
+                    <input type="reset">
+
+                </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        조준범/60211700/기초웹 과제#1
+    </footer>
+</body>
+
+</html>
