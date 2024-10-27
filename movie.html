@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- 조준범/60211700/기초웹 과제 #2 -->
+
+    <title>60211700_조준범</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">🎥명지 시네마🎬</a>
+        </div>
+    </header>
+
+    <nav class="navMenu">
+        <ul id="topMenu">
+            <li><a href="register.html">회원가입</a></li>
+            <li><a href="movie.html">영화 예매</a></li>
+            <li><a href="food.html">매점 주문</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <aside>
+        <h2>로그인</h2>
+        <div class="login" id="login">
+            <form action="#">
+                <div class="inputID">
+                    <label for="loginName">아이디 : </label><br>
+                    <input type="text" id="loginName" name="loginName" minlength="8" maxlength="16" required
+                        placeholder="아이디를 입력해주세요.">
+                </div><br>
+
+                <div class="inputPW">
+                    <label for="passwd">비밀번호 : </label><br>
+                    <input type="password" id="passwd" name="passwd" minlength="8" maxlength="16" required
+                        placeholder="비밀번호를 입력해주세요.">
+                </div><br>
+
+                <div class="submitButton">
+                    <input type="submit" value="로그인">
+                    <a href="register.html"><input type="button" value="회원가입"></a>
+                </div>
+            </form>
+        </div>
+    </aside>
+    <hr>
+
+    <main>
+        <!-- 영화 예매 -->
+        <section id="movie">
+            <fieldset>
+                <legend>
+                    <h2>영화 예매</h2>
+                </legend>
+
+                <fieldset>
+                    <legend>상영 진행 중</legend>
+                    <table border="1">
+                        <tr>
+                            <tbody></tbody>
+                            <td><a
+                                    href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EB%B9%84%EA%B8%B4%EC%96%B4%EA%B2%8C%EC%9D%B8&oquery=%EC%9D%B8%EC%82%AC%EC%9D%B4%EB%93%9C+%EC%95%84%EC%9B%83+2&tqi=iYjq1dqVN8osscLJZdhssssstZ4-089442"><img
+                                        src="img/BeginAgain.jfif"></a></td>
+                            <td><a
+                                    href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=32619620&qvt=0&query=%EC%9D%B8%EC%82%AC%EC%9D%B4%EB%93%9C%20%EC%95%84%EC%9B%83%202"><img
+                                        src="img/insideout2.jfif"></a></td>
+                            <td><a
+                                    href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EC%A1%B0%EC%BB%A42&oquery=%EB%B2%A0%ED%85%8C%EB%9E%912&tqi=iYjrtsqVOsCsscQOYQKssssst3o-460135"><img
+                                        src="img/joker2.jfif"></a></td>
+                            <td><a
+                                    href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blpF^bkEw&x_csa=%7B%22researchchart%22%3Atrue%7D&pkid=68&os=33925294&x_nqx=%7B%22theme%22%3A%22movie_info%22%2C%22pkid%22%3A%2268%22%2C%22os%22%3A%2233925294%22%7D&qvt=0&query=%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8%20ONE"><img
+                                        src="img/Transformer.jfif"></a></td>
+                            <td><a
+                                    href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blpF^bkEw&x_csa=%7B%22researchchart%22%3Atrue%7D&pkid=68&os=2954622&x_nqx=%7B%22theme%22%3A%22movie_info%22%2C%22pkid%22%3A%2268%22%2C%22os%22%3A%222954622%22%7D&qvt=0&query=%EB%B2%A0%ED%85%8C%EB%9E%912"><img
+                                        src="img/veteran2.jfif"></a></td>
+                            </tbody>
+                        </tr>
+                        <tfoot>
+                            <tr align="center">
+                                <td colspan="5">* 위 이미지를 클릭하면 영화의 정보를 확인할 수 있습니다. *</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </fieldset>
+                <div class="book">
+                    <form action="#">
+                        <div class="bookDate">
+                            <label for="date">예매 희망 날짜 : </label>
+                            <input type="date" name="reservationDate">
+                            <br>
+                        </div>
+
+                        <div class="people">
+                            <label for="normal"><input type="checkbox" name="human" value="normal">일반</label>
+                            <input type="number" min="0" max="10" value="0"> 명 (최대 10명)
+                            <br>
+
+                            <label for="old"><input type="checkbox" name="human" value="old">노약자</label>
+                            <input type="number" min="0" max="10" value="0"> 명 (최대 10명)
+                            <br>
+
+                            <label for="soldier"><input type="checkbox" name="human" value="soldier">군인</label>
+                            <input type="number" min="0" max="10" value="0"> 명 (최대 10명)
+                            <br><br>
+
+                            <input type="submit" value="예매하기">
+                            <input type="reset" value="초기화">
+                        </div>
+                </div>
+
+                <br>
+
+
+
+
+                </form>
+                <table id="table1">
+                    <caption><strong>상영 일정</strong></caption>
+                    <thead>
+                        <tr>
+                            <th width="100">시간/상영관</th>
+                            <th width="100">1관</th>
+                            <th width="100">2관</th>
+                            <th width="100">3관</th>
+                            <th width="100">4관</th>
+                            <th width="100">5관</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="center" height="60">
+                            <th>9:00</th>
+                            <td rowspan="4"><input type="image" src="img/BeginAgain.jfif" name="movieName"
+                                    value="BeginAgain" height="220"></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/veteran2.jfif" name="movieName"
+                                    value="Veteran2" height="220"></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/joker2.jfif" name="movieName" value="Joker2"
+                                    height="220"></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>9:30</th>
+                            <td rowspan="4"><input type="image" src="img/Transformer.jfif" name="movieName"
+                                    value="TransformerOne" height="220">
+                            </td>
+                            <td rowspan="4"><input type="image" src="img/insideout2.jfif" name="movieName"
+                                    value="InsideOut2" height="220">
+                            </td>
+
+
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>10:00</th>
+
+
+
+
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>10:30</th>
+
+
+
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>11:00</th>
+                            <td></td>
+                            <td></td>
+
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>11:30</th>
+                            <td rowspan="4"><input type="image" src="img/BeginAgain.jfif" name="movieName"
+                                    value="BeginAgain" height="220"></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/veteran2.jfif" name="movieName"
+                                    value="Veteran2" height="220"></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/joker2.jfif" name="movieName" value="Joker2"
+                                    height="220"></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>12:00</th>
+                            <td rowspan="4"><input type="image" src="img/Transformer.jfif" name="movieName"
+                                    value="TransformerOne" height="220">
+                            </td>
+                            <td rowspan="4"><input type="image" src="img/insideout2.jfif" name="movieName"
+                                    value="InsideOut2" height="220">
+                            </td>
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>12:30</th>
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>13:00</th>
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>13:30</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>14:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>14:30</th>
+                            <td rowspan="4"><input type="image" src="img/BeginAgain.jfif" name="movieName"
+                                    value="BeginAgain" height="220"></td>
+                            <td rowspan="4"><input type="image" src="img/veteran2.jfif" name="movieName"
+                                    value="Veteran2" height="220"></td>
+                            <td rowspan="4"><input type="image" src="img/joker2.jfif" name="movieName" value="Joker2"
+                                    height="220"></td>
+                            <td rowspan="4"><input type="image" src="img/Transformer.jfif" name="movieName"
+                                    value="TransformerOne" height="220">
+                            </td>
+                            <td rowspan="4"><input type="image" src="img/insideout2.jfif" name="movieName"
+                                    value="InsideOut2" height="220">
+                            </td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>15:00</th>
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>15:30</th>
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>16:00</th>
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>16:30</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>17:00</th>
+                            <td rowspan="4"><input type="image" src="img/BeginAgain.jfif" name="movieName"
+                                    value="BeginAgain" height="220"></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/joker2.jfif" name="movieName" value="Joker2"
+                                    height="220"></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/veteran2.jfif" name="movieName"
+                                    value="Veteran2" height="220"></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>17:30</th>
+                            <td rowspan="4"><input type="image" src="img/Transformer.jfif" name="movieName"
+                                    value="TransformerOne" height="220">
+                            </td>
+                            <td rowspan="4"><input type="image" src="img/insideout2.jfif" name="movieName"
+                                    value="InsideOut2" height="220">
+                            </td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>18:00</th>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>18:30</th>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>19:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>19:30</th>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/veteran2.jfif" name="movieName"
+                                    value="Veteran2" height="220"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>20:00</th>
+                            <td rowspan="4"><input type="image" src="img/Transformer.jfif" name="movieName"
+                                    value="TransformerOne" height="220">
+                            <td></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/insideout2.jfif" name="movieName"
+                                    value="InsideOut2" height="220">
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>20:30</th>
+                            <td rowspan="4"><input type="image" src="img/BeginAgain.jfif" name="movieName"
+                                    value="BeginAgain" height="220"></td>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>21:00</th>
+                            <td rowspan="4"><input type="image" src="img/joker2.jfif" name="movieName" value="Joker2"
+                                    height="220"></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>21:30</th>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>22:00</th>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/BeginAgain.jfif" name="movieName"
+                                    value="BeginAgain" height="220"></td>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>22:30</th>
+                            <td rowspan="4"><input type="image" src="img/joker2.jfif" name="movieName" value="Joker2"
+                                    height="220"></td>
+                            <td></td>
+                            <td rowspan="4"><input type="image" src="img/veteran2.jfif" name="movieName"
+                                    value="Veteran2" height="220"></td>
+
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>23:00</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>23:30</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr align="center" height="60">
+                            <th>24:00</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6" height="50">
+                                <input type="text" value="* 추후 선택한 영화와 인원 수를 볼 수 있게 추가할 예정" size="122" height="50">
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+        </section>
+
+    </main>
+
+    <footer>
+        <em>조준범/60211700/기초웹 과제#2</em>
+    </footer>
+
+
+</body>
+
+</html>

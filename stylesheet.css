@@ -1,0 +1,206 @@
+/*조준범/60211700/기초웹 과제#2*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+label{
+    color: #3b82f6;
+}
+
+
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav" 
+        "main aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    gap: 10px; 
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* 공통 레이아웃 스타일 */
+header, nav, main, aside, footer {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #2e3b4e;
+    color: white;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+    transform: scale(1.05);
+}
+
+main {
+    grid-area: main;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #f0f0f0;
+    border: 1px solid #dcdcdc;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #2e3b4e;
+    color: white;
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#login,
+.register,
+.personalWrite,
+.nameWrite,
+.locationWrite
+.agreementWrite,
+.book,
+.formCheck,
+.order
+ {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f8f9fa;
+}
+
+.container_location div[class] {
+    background-color:#49f3f6
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "aside"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+    }
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+
+.container_location{
+    display: grid;
+    grid-template-areas:
+    "hongdae shinchon"
+    "gangnam incheon";
+    gap: 1px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hongdae{
+    grid-area: hongdae;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+    
+}
+
+.shinchon{
+    grid-area: shinchon;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+}
+
+.gangnam{
+    grid-area: gangnam;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+}
+
+.incheon{
+    grid-area: incheon;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+}
+
+.container_location div:nth-child(n):hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+input:focus{
+    outline:none;
+    border: 2px solid rgb(105, 37, 189)
+}
